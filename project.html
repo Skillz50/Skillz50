@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillWeb Academy-Source of digital skills</title>
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="bg">
+</header>
+<header class="header">
+  <h1>SkillWeb Project Works</h1>
+  <p>Explore some of the amazing projects completed by Skillweb Academy.</p>
+  <div class="filters">
+    <button onclick="filterProjects('all')" class="filter-btn active">All</button>
+    <button onclick="filterProjects('web')" class="filter-btn">Web Development</button>
+    <button onclick="filterProjects('graphic')" class="filter-btn">Graphic Design</button>
+    <button onclick="filterProjects('animation')" class="filter-btn">Animation</button>
+  </div>
+</header>
+<main class="projects-container">
+  <!-- Web Development Project -->
+  <div class="project-card" data-category="web" onclick="viewProject('project9')" onclick="openModal('project1')">
+    <img src="jollofrice.jpeg" alt="Project 1">
+    <h3>Project 1: Food Recipes Web Design</h3>
+    <p>A well curated and updated food recipes website built with HTML, CSS, and JavaScript.</p>
+  </div>
+
+  <div class="project-card" data-category="web" onclick="viewProject('project10')" onclick="openModal('project1')">
+    <img src="home.jpeg" alt="Project 1">
+    <h3>Project 2: Responsive Web App Design</h3>
+    <p>A sleek and responsive website app built with HTML, CSS, and JavaScript.</p>
+  </div>
+  <div class="project-card" data-category="web" onclick="viewProject('project11')" onclick="openModal('project1')">
+    <img src="signup.jpeg" alt="Project 1">
+    <h3>Project 3: Responsive Sign Up form Design</h3>
+    <p>A very responsive user sign up form built with HTML, CSS, and JavaScript.</p>
+  </div>
+  <div class="project-card" data-category="web" onclick="viewProject('project12')" onclick="openModal('project1')">
+    <img src="match.jpeg" alt="Project 1">
+    <h3>Project 4: Unique Football Update web app Design</h3>
+    <p>Updated ans Real-Time Premier League score app built with HTML, CSS, and JavaScript.</p>
+  </div>
+
+
+  <!-- Animation Project -->
+  <div class="project-card" data-category="animation" onclick="viewProject('project1')" onclick="openModal('project2')">
+ <img src="project2-thumbnail.jpg" alt="Project 2">
+    <h3>Project 1: JavaScript Animation</h3>
+    <p>Interactive animations created using modern JavaScript frameworks.</p>
+  </div>
+
+ <div class="project-card" data-category="animation" onclick="viewProject('project1')" onclick="openModal('project2')">
+ <img src="project2-thumbnail.jpg" alt="Project 2">
+    <h3>Project 2: JavaScript Animation</h3>
+    <p>Interactive animations created using modern JavaScript frameworks.</p>
+  </div>
+
+ <div class="project-card" data-category="animation" onclick="viewProject('project1')" onclick="openModal('project2')">
+    <img src="project2-thumbnail.jpg" alt="Project 2">
+    <h3>Project 3: JavaScript Animation</h3>
+    <p>Interactive animations created using modern JavaScript frameworks.</p>
+  </div>
+
+
+
+
+  <!-- Graphic Design Project -->
+  <div class="project-card" data-category="graphic" onclick="viewProject('project4')" onclick="openModal('project3')">
+    <img src="gaozu.jpeg" alt="Project 3">
+    <h3>Project 1: Masterclass Learning Banner </h3>
+    <p>Professional graphic design with custom animation effects.</p>
+  </div>
+
+<div class="project-card" data-category="graphic" onclick="viewProject('project5')" onclick="openModal('project3')">
+    <img src="mockup.jpeg" alt="Project 3">
+    <h3>Project 2: Book Launching Design</h3>
+    <p>Professional graphic design with custom animation effects.</p>
+  </div>
+
+<div class="project-card" data-category="graphic" onclick="viewProject('project6')" onclick="openModal('project3')">
+    <img src="asake.jpeg" alt="Project 3">
+    <h3>Project 3: Restaurant Banner Design</h3>
+    <p>Professional graphic design with custom animation effects.</p>
+  </div>
+
+<div class="project-card" data-category="graphic" onclick="viewProject('project7')" onclick="openModal('project3')">
+    <img src="sal.jpeg" alt="Project 3">
+    <h3>Project 4: Food Ads Design</h3>
+    <p>Professional graphic design with custom animation effects.</p>
+  </div>
+<div class="project-card" data-category="graphic" onclick="viewProject('project8')" onclick="openModal('project3')">
+    <img src="what.jpeg" alt="Project 3">
+    <h3>Project 5: WhatsApp Seminar Banner Design</h3>
+    <p>Professional graphic design with custom animation effects.</p>
+  </div>
+
+</main>
+<!-- Modal for Viewing Project Details -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+
+<!-- Contact us -->
+<section class="contact-us" id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us and we’ll get back to you shortly.</p>
+    <form action="https://formspree.io/f/meoqpedp" method="POST">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Skillweb Academy. All Rights Reserved.</p>
+     
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+<a href="https://wa.me/2348159102563" class="whatsapp-float" target="_blank">
+  <img src="whatsapp-icon.png" alt="Chat on WhatsApp">
+</a>
+</body>
+</html>

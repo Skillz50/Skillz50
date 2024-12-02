@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>SkillWeb Academy-Source of digital skills</title>
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Slick Slider CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+
+</head>
+<body class="bg">
+  <!-- Header Section -->
+ <header class="hero">
+  <div class="hero-content">
+    <h1>Skillweb Academy</h1>
+    <p>Your journey to mastering On-Demand Digital Skills starts here.</p>
+    <a href="#courses" class="cta-button">Explore Courses</a>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+ <header class="hero-slider">
+  <div class="slide active">
+    <div class="overlay"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWMHH8rAjGDnITXV0WJW5BmFJl7J4YxnZkQyT9NZGYiT3j5JxuJ1pQFVtd&s=10" alt="Web Development Courses">
+    <div class="slide-content">
+      <h1>Master Web Development</h1>
+      <p>Learn HTML, CSS, and JavaScript to build stunning websites.</p>
+      
+    </div>
+  </div>
+  <div class="slide">
+    <div class="overlay"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO_ScoHqIlQ-qHJF-8fh2nM-4zsN53bBSL4A&usqp=CAU" alt="Expert Instructors">
+    <div class="slide-content">
+      <h1>Learn from Experts</h1>
+      <p>Our instructors bring real-world experience to every class.</p>
+      
+    </div>
+  </div>
+  <div class="slide">
+    <div class="overlay"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrglZf2ykvwJTIiyY9jawrWRKLRUfoYlF7A&usqp=CAU" alt="Flexible Learning">
+    <div class="slide-content">
+      <h1>Flexible Learning</h1>
+      <p>Access courses at your own pace, anytime, anywhere.</p>
+    
+    </div>
+  </div>
+<div class="slide">
+    <div class="overlay"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOumgs-UbMKvQtPDanuC-kZLtMBTlp70beQg&usqp=CAU" alt="Design like a pro">
+    <div class="slide-content">
+      <h1>Design Like a pro</h1>
+      <p>Get hands-on experience in graphic designs with even your smartphones.</p>
+     
+    </div>
+  </div>
+<div class="slide">
+    <div class="overlay"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8cX6ivjIJWLS_cDxXLoJwG6J3cVhrEUBA8Hx86HL3nMfTl8jaGDPbX8B4&s=10" alt="animation made easy">
+    <div class="slide-content">
+      <h1>Animation with ease</h1>
+      <p>Get our animation course and step into world of animation with phones.</p>
+    
+    </div>
+  </div>
+
+<div class="slide">
+    <div class="overlay"></div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgIiyInJcjJPyDo7ptHGtiYcq_iuMu_LhIJQ&usqp=CAU" alt="Join a Growing Community">
+    <div class="slide-content">
+      <h1>Our projects </h1>
+      <p>We have done alot of projects and still have some at hands.</p>
+      <a href="./project.html" class="cta-button">View</a>
+    </div>
+  </div>
+  <div class="navigation">
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+</header>
+<!-- search box -->
+
+
+<!-- Search Box -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search courses, topics, or sections...">
+      <button id="searchBtn">Search</button>
+    </div>
+
+
+
+<!-- Counting of students -->
+<section class="counters">
+  <div class="counter-box">
+    <div class="icon">
+      <img src="projects-icon.png" alt="Projects Icon">
+    </div>
+    <h2 id="projects-count" class="counter">0</h2>
+    <p>Projects Delivered</p>
+    <div class="progress-bar">
+      <div class="progress" id="projects-progress"></div>
+    </div>
+  </div>
+  <div class="counter-box">
+    <div class="icon">
+      <img src="students-icon.png" alt="Students Icon">
+    </div>
+    <h2 id="students-count" class="counter">0</h2>
+    <p>Satisfied Students</p>
+    <div class="progress-bar">
+      <div class="progress" id="students-progress"></div>
+    </div>
+  </div>
+  <div class="counter-box">
+    <div class="icon">
+      <img src="partnerships-icon.png" alt="Partnerships Icon">
+    </div>
+    <h2 id="partnerships-count" class="counter">0</h2>
+    <p>Partnerships</p>
+    <div class="progress-bar">
+      <div class="progress" id="partnerships-progress"></div>
+    </div>
+  </div>
+  <div class="counter-box">
+    <div class="icon">
+      <img src="foreign.png" alt="International Icon">
+    </div>
+    <h2 id="international-count" class="counter">0</h2>
+    <p>Foreign Students</p>
+    <div class="progress-bar">
+      <div class="progress" id="international-progress"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Function to animate numbers
+  function animateCounter(element, start, end, duration) {
+    let startTime = null;
+
+    function animation(currentTime) {
+      if (!startTime) startTime = currentTime;
+      const progress = currentTime - startTime;
+      const value = Math.min(Math.ceil((progress / duration) * (end - start) + start), end);
+      element.innerText = value;
+      if (value < end) {
+        requestAnimationFrame(animation);
+      }
+    }
+
+    requestAnimationFrame(animation);
+  }
+
+  // Function to animate progress bars
+  function animateProgressBar(element, endPercentage) {
+    element.style.width = `${endPercentage}%`;
+  }
+
+  // Observer to trigger animation when counters are in view
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Counters Animation
+          animateCounter(document.getElementById('projects-count'), 0, 250, 2000);
+          animateCounter(document.getElementById('students-count'), 0, 1200, 2000);
+          animateCounter(document.getElementById('partnerships-count'), 0, 10, 20);
+          animateCounter(document.getElementById('international-count'), 0, 300, 2000);
+
+          // Progress Bars Animation
+          animateProgressBar(document.getElementById('projects-progress'), 100); // 100% Progress
+          animateProgressBar(document.getElementById('students-progress'), 100); // 100% Progress
+          animateProgressBar(document.getElementById('partnerships-progress'), 100); // 100% Progress
+          animateProgressBar(document.getElementById('international-progress'), 100); // 100% Progress
+
+          observer.disconnect(); // Run animation only once
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  // Start observing the counters
+  observer.observe(document.querySelector('.counters'));
+</script>
+
+<!-- Team page -->
+
+<section class="banner">
+  <div class="banner-content">
+     </div>
+</section>
+
+   <section class="team">
+  
+  <div class="team-container">
+    <div class="team-member">
+      <img src="testimonial1.png" alt="Team Member 1">
+      <h3>Oladokun Abdullateef</h3>
+      <p>Lead Web Developer</p>
+      <div class="social-media">
+         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    </div>
+    <div class="team-member">
+      <img src="gaozu.jpeg" alt="Team Member 2">
+      <h3>Gaozu Official</h3>
+      <p>Graphic Designer</p>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+    </div>
+    <div class="team-member">
+      <img src="testimonial2.png" alt="Team Member 3">
+      <h3>Himax DeSpecified</h3>
+      <p>Animation Expert</p>
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+ 
+    </div>
+  </div>
+</section>
+
+  </div>
+</div>
+
+
+<main class="content">
+
+  <!-- Course Outline Section -->
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-list">
+      <div class="course">
+        <h3>HTML Basics</h3>
+        <p>Start with the foundation of every website. Learn the structure of web pages.</p>
+        <p>Price: ₦60,000</p>
+       <a href="./HTML-Basics.html"> <button>Enroll Now</button></a>
+      </div>
+      <div class="course">
+        <h3>CSS Essentials</h3>
+        <p>Learn to style websites with modern CSS techniques.</p>
+        <p>Price: ₦80,000</p>
+        <a href="./CSS-Learn.html"> <button>Enroll Now</button></a>
+      </div>
+      <div class="course">
+        <h3>JavaScript Mastery</h3>
+        <p>Add interactivity to your websites with JavaScript.</p>
+        <p>Price: ₦100,000</p>
+         <a href="./JavaScript-on.html"> <button>Enroll Now</button></a>
+      </div>
+<div class="course">
+        <h3>Graphic Design Basics</h3>
+        <p>Start with the design and structuring of graphics. Learn the structure of graphic designs.</p>
+        <p>Price: ₦15,000</p>
+        <a href="./Learn-Graphics.html"> <button>Enroll Now</button></a>
+      </div>
+<div class="course">
+        <h3>Animation & Rigging</h3>
+        <p>The implementation of animation making with the rigging just only with the use of smartphone.</p>
+        <p>Price: ₦30,000</p>
+         <a href="./Animate-skill.html"> <button>Enroll Now</button></a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+  <!-- About us -->
+
+<section class="about">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>About Skillweb Academy</h2>
+      <p>
+        Skillweb Academy is your gateway to mastering the art of creating stunning websites and engaging visual designs. Our academy is dedicated to equipping learners with the essential skills to excel in the dynamic fields of web development and graphic design. Whether you're an aspiring developer, a budding designer, or a creative professional looking to upskill, we have the perfect courses for you.
+      </p>
+      <p>
+        Our mission is to empower aspiring developers to create dynamic, professional websites with ease. Start your journey with us today and join thousands of successful students worldwide.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="https://imgcdn.stablediffusionweb.com/2024/5/10/26f35985-c7dd-4c35-aa16-8b39b28226e1.jpg" alt="Skillweb Tech Training">
+    </div>
+  </div>
+</section>
+
+<!-- Who is this for -->
+<section class="why-choose-us">
+  <div class="why-choose-content">
+    <div class="why-choose-text">
+      <h2>Who are these Courses for?</h2>
+      <ul>
+        <li>Beginners with no prior experience looking to enter the tech or design industry.</li>
+        <li>Entrepreneurs and small business owners aiming to build and design their own websites.</li>
+        <li>Creative professionals wanting to expand their skillset and enhance their career prospects.</li>
+       
+      </ul>
+    </div>
+    <div class="why-choose-image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PWJDjbqKSaYL63KG16T9dBAMSdgkOIsNkw&usqp=CAU" alt="Why Choose Skillweb Tech">
+    </div>
+  </div>
+</section>
+
+
+  
+<!-- Why Choose Us -->
+<section class="why-choose-us">
+  <div class="why-choose-content">
+    <div class="why-choose-text">
+      <h2>Why Choose Skillweb Academy?</h2>
+      <ul>
+        <li><strong>Expert Instructors:</strong> Learn from industry professionals with real-world experience.</li>
+        <li><strong>Comprehensive Curriculum:</strong> Master HTML, CSS, and JavaScript through hands-on projects.</li>
+        <li><strong>Flexible Learning:</strong> Access courses anytime, anywhere, at your own pace.</li>
+        <li><strong>Career Support:</strong> Gain job-ready skills and receive guidance for landing your dream role.</li>
+        <li><strong>Affordable Pricing:</strong> High-quality courses at prices that don’t break the bank.</li>
+      </ul>
+    </div>
+    <div class="why-choose-image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT06Yd0gmMq3Z9hVNRmfglhlg-EA8RYCPXeQQ&usqp=CAU" alt="Why Choose Skillweb Tech" >
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+ <section class="testimonials">
+  <h2>What Our Students Say</h2>
+  <div class="testimonial-slider">
+    <div class="testimonial">
+      <p>"Skillweb Academy helped me land my dream job. Highly recommended!"</p>
+      <h4>- Aliu Mallam</h4>
+    </div>
+    <div class="testimonial">
+      <p>"The instructors are knowledgeable, and the content is top-notch."</p>
+      <h4>- Esther Alabi</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Great platform for beginners. I loved the hands-on projects!"</p>
+      <h4>- Adigun Sulaiman</h4>
+    </div>
+<div class="testimonial">
+      <p>"I love SkillWeb Academy, they are flexible in teaching!"</p>
+      <h4>- Olaide Maruff</h4>
+    </div>
+<div class="testimonial">
+      <p>"Learning with SkillWeb from Sweden worth it alot !"</p>
+      <h4>- Chi Anoze</h4>
+    </div>
+<div class="testimonial">
+      <p>"Thanks to God. I found them when i'm at the edge of losing my job!"</p>
+      <h4>- John Sarah</h4>
+    </div>
+  </div>
+</section>
+
+<main class="content">
+<!-- Blog post -->
+
+<section id="blog-spot">
+  <h2>Latest Articles</h2>
+  <div class="blog-container">
+    <!-- Blog Card 1 -->
+    <div class="blog-card" onclick="openModal('blog1')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1---1tvxeKh6KZvrsCznd805FLuxNKf0jm1Y0SU0kcr3mSA0X4-jbBoP3&s=10" alt="Blog Post 1">
+      <div class="blog-content">
+        <h3> Master HTML and CSS</h3>
+        <p>Discover the secrets to becoming proficient in web design with our expert tips. The only ways to gain the dreaming and promising profit with website career is here with us at SkillWeb Academy</p>
+        <div class="author-details">
+          <img src="testimonial1.png" alt="Author 1">
+          <div>
+            <span>By SkillWeb Media Team</span>
+            <span>Nov 30, 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Card 2 -->
+    <div class="blog-card" onclick="openModal('blog2')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUMUsqavlr9mYNrqRqk24wmlilbCmkKY48kkt_Rm415ntfRGR1iWF1OZju&s=10" alt="Blog Post 2">
+      <div class="blog-content">
+        <h3>Why JavaScript is a Must-Learn Skill</h3>
+        <p>Explore why JavaScript is essential for modern web development and how it can boost your career. Alot of people are always in queue for this, though they may mot to be seen but yoh don't have to be part of queue if yoh know your way around tech. JavaScript is a good and important franework you should learn </p>
+        <div class="author-details">
+          <img src="testimonial1.png" alt="Author 2">
+          <div>
+            <span>By SkillWeb Media Team</span>
+            <span>Nov 28, 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <!-- Modal -->
+  <div id="blog-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact us -->
+<section class="contact-us" id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us and we’ll get back to you shortly.</p>
+    <form action="https://formspree.io/f/meoqpedp" method="POST">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+<section class="partners">
+  <h2>Our Trusted Partners</h2>
+  <div class="partner-logos-carousel">
+    <div class="partner-logo">
+      <img src="https://marketplace.canva.com/EAFZHXFe3p8/1/0/1600w/canva-black-and-grey-clean-modern-minimalist-creative-technology-logo-ta7BAs34G3c.jpg" alt="Partner 1">
+    </div>
+    <div class="partner-logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWml1TFaaaeSD58K53DzpDoKhh4yF9xwXrQZpVhE8KaC8cnUJZJ8g0t6zf&s=10" alt="Partner 2">
+    </div>
+    <div class="partner-logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbWGCz60NqXDFh0s5O_NriTDJRwCUY7Uw9tT8rabS14OYWsJNF34XXQYk&s=10" alt="Partner 3">
+    </div>
+    <div class="partner-logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiCuxn9e9mehBBz6IRfrNanQjrsZQxWqwiUf6NlCkQCi0iUqaP5i8Zzmw&s=10" alt="Partner 4">
+    </div>
+    <div class="partner-logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPexKCdOaa-loMIWz8wZ1AICcHSqqTuvj6ng&usqp=CAU" alt="Partner 5">
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Skillweb Academy. All Rights Reserved.</p>
+     
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  nextButton.addEventListener('click', nextSlide);
+  prevButton.addEventListener('click', prevSlide);
+
+  // Auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
+
+<a href="https://wa.me/2348159102563" class="whatsapp-float" target="_blank">
+  <img src="whatsapp-icon.png" alt="Chat on WhatsApp">
+</a>
+
+<!-- Slick Slider JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</body>
+</html>
